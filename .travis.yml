@@ -1,0 +1,49 @@
+language: node_js
+node_js: 12.13.0
+
+# 加快下次的访问速度
+cache:
+  directories:
+    - node_modules
+
+# 当名为dev的分支有变化，就重新构建一次
+branches:
+  only:
+    - dev
+
+before_install:
+  - npm install -g hexo-cli
+  
+# S: Build Lifecycle
+install:
+  - npm install
+  - npm install hexo-deployer-git --save
+
+# before_script:
+# - npm install -g gulp
+
+# 编译hexo  
+script:
+  - hexo clean
+  - hexo generate
+
+after_script:
+#  - cd ./public
+#  - git init
+  - git config user.name "yjn"
+  - git config user.email "13335765498@163.com"
+#  - git add .
+#  - git commit -m "Update docs"
+#  - git push --force --quiet "${Travis}@${GH_REF}" master:master
+  - sed -i "s/Travis/${GH_TOKEN}/g" ./_config.yml
+  - hexo deploy
+
+# 推送位置
+#deploy:
+#  provider: pages
+#  skip-cleanup: true
+#  github-token: $GH_TOKEN
+#  keep-history: true
+#  on:
+#    branch: master
+# local-dir: public

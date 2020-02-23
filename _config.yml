@@ -80,16 +80,5 @@ theme: Sakura
 deploy:
   type: git
   repo: 
-    github: git@github.com:Youjianan/youjianan.github.io.git
+    github: https://Travis@github.com/Youjianan/youjianan.github.io.git
   branch: master
-
-#RSS
-feed:
-  type: atom
-  path: atom.xml
-  limit: 20
-  hub:
-  content:
-  content_limit: 140
-  content_limit_delim: ' '
-  order_by: -date
