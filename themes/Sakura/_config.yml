@@ -42,8 +42,8 @@ homePageSortType: -1
 homeArticleShown: 10
 
 bg:
-  - /img/cover/1.jpg.webp
-  - /img/cover/2.jpg.webp
+  - https://cdn.jsdelivr.net/gh/Youjianan/cdn@1.2/img/cover/1.jpg.webp
+  - https://cdn.jsdelivr.net/gh/Youjianan/cdn@1.2/img/cover/2.jpg.webp
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass: filter-dot
