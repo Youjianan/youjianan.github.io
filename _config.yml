@@ -82,3 +82,12 @@ deploy:
   repo: 
     github: https://Travis@github.com/Youjianan/youjianan.github.io.git
   branch: master
+
+# live2d
+live2d:
+  model:
+    scale: 0.8
+  display:
+    position: left
+    hOffset: 20
+    vOffset: 20

@@ -35,8 +35,8 @@ menus:
     主题: {path: /theme-sakura/, fa: iconfont icon-sakura },
     Lab: {path: /lab/, fa: fa-cogs },
   } }
-  客户端: { path: /client/, fa: fa-android faa-vertical }
-  RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
+  # 客户端: { path: /client/, fa: fa-android faa-vertical }
+  # RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
 
 homePageSortType: -1
 homeArticleShown: 10
@@ -57,8 +57,8 @@ siteBuildingTime: 02/22/2020
 
 social:
   GitHub: {url: https://github.com/Youjianan, img: /img/social/github.png}
-  QQ: {url: /#, qrcode: /img/custom/qq.jpg, img: /img/social/qq.png}
-  微信: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
+  qq: {url: /#, qrcode: /img/custom/qq.jpg, img: /img/social/qq.png}
+  wechat: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
   知乎: {url: https://www.zhihu.com/people/nanmu233, img: /img/social/zhihu.png}
   网易云: {url: https://music.163.com/#/playlist?id=783180708, img: /img/social/wangyiyun.png}
 
@@ -73,11 +73,11 @@ movies:
   name: Unbroken.mp4
 
 aplayer: 
-  id: 2660651585
+  id: 4881047811
   server: netease
   type: playlist
   fixed: true
-  autoplay: false
+  autoplay: true
   loop: all
   order: random
   preload: auto
