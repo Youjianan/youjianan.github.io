@@ -3,8 +3,8 @@ siteName: 楠沐
 favicon: /img/custom/favicon.ico
 avatar: /img/avatar/avatar.jpg
 url: https://youjianan.github.io/
-description: 再小的帆也能远航。
-cdn: https://cdn.jsdelivr.net/gh/Youjianan/cdn@1.31
+description: 『 再小的帆也能远航 』
+cdn: https://cdn.jsdelivr.net/gh/Youjianan/cdn@1.4
 
 pjax: 1
 mathjax: 0
@@ -16,10 +16,10 @@ menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
   归档: { path: /archives, fa: fa-archive faa-shake, submenus: {
     技术: {path: /categories/技术/, fa: fa-code },
-    生活: {path: /categories/生活/, fa: fa-file-text-o },
-    资源: {path: /categories/资源/, fa: fa-cloud-download },
-    随想: {path: /categories/随想/, fa: fa-commenting-o },
-    转载: {path: /categories/转载/, fa: fa-book }
+    # 生活: {path: /categories/生活/, fa: fa-file-text-o },
+    # 资源: {path: /categories/资源/, fa: fa-cloud-download },
+    # 随想: {path: /categories/随想/, fa: fa-commenting-o },
+    # 转载: {path: /categories/转载/, fa: fa-book }
   } }
   清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: {
     书单: {path: /tags/悦读/, fa: fa-th-list faa-bounce },
@@ -29,11 +29,11 @@ menus:
   } }
   留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
   友人帐: { path: /links/, fa: fa-link faa-shake }
-  赞赏: { path: /donate/, fa: fa-heart faa-pulse }
+  # 赞赏: { path: /donate/, fa: fa-heart faa-pulse }
   关于: { path: /, fa: fa-leaf faa-wrench , submenus: {
     我？: {path: /about/, fa: fa-meetup},
     主题: {path: /theme-sakura/, fa: iconfont icon-sakura },
-    Lab: {path: /lab/, fa: fa-cogs },
+    # Lab: {path: /lab/, fa: fa-cogs },
   } }
   # 客户端: { path: /client/, fa: fa-android faa-vertical }
   # RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
@@ -42,9 +42,9 @@ homePageSortType: -1
 homeArticleShown: 10
 
 bg:
-  - https://cdn.jsdelivr.net/gh/Youjianan/cdn@1.31/img/cover/1.webp
-  - https://cdn.jsdelivr.net/gh/Youjianan/cdn@1.31/img/cover/2.webp
-  - https://cdn.jsdelivr.net/gh/Youjianan/cdn@1.31/img/cover/3.webp
+  - /img/cover/1.webp
+  - /img/cover/2.webp
+  - /img/cover/3.webp
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass: filter-dot
@@ -67,16 +67,17 @@ donate:
   alipay: /img/donate/alipay.png
   wechat: /img/donate/wechat.png
 
+# （待解决）尽管不需要首页视频，也不能去掉这3个属性名
 movies:
-  url: https://cdn.jsdelivr.net/gh/honjun/hojun@1.2
-  name: Unbroken.mp4
+  url:
+  name:
 
 aplayer:
   id: 4881047811
   server: netease
   type: playlist
   fixed: true
-  autoplay: true
+  autoplay: false
   loop: all
   order: random
   preload: auto

@@ -5,19 +5,19 @@ document.write('<script src="/js/botui.js" type="text/javascript" charset="utf-8
 function bot_ui_ini() {
     var botui = new BotUI("hello-mashiro")
     botui.message.add({
-        delay: 800,
+        delay: 1000,
         content: "Hi, there👋"
     }).then(function () {
         botui.message.add({
-            delay: 1100,
-            content: "这里是 Mashiro"
+            delay: 1000,
+            content: "这里是 楠沐"
         }).then(function () {
             botui.message.add({
-                delay: 1100,
+                delay: 1000,
                 content: "一个可爱的蓝孩子~"
             }).then(function () {
                 botui.action.button({
-                    delay: 1600,
+                    delay: 1500,
                     action: [{
                         text: "然后呢？ 😃",
                         value: "sure"
@@ -34,7 +34,7 @@ function bot_ui_ini() {
     });
     var sure = function () {
             botui.message.add({
-                delay: 600,
+                delay: 1000,
                 content: "😘"
             }).then(function () {
                 secondpart()
@@ -42,49 +42,34 @@ function bot_ui_ini() {
         },
         end = function () {
             botui.message.add({
-                delay: 600,
-                content: "![...](https://view.moezx.cc/images/2018/05/06/a1c4cd0452528b572af37952489372b6.md.jpg)"
+                delay: 1000,
+                content: "![...](https://cdn.jsdelivr.net/gh/Youjianan/cdn@1.4/img/meme/end.jpg)"
             })
         },
         secondpart = function () {
             botui.message.add({
-                delay: 1500,
-                content: "目前就读于上海财经大学"
+                delay: 1000,
+                content: "目前就读于杭州电子科技大学"
             }).then(function () {
                 botui.message.add({
-                    delay: 1500,
-                    content: "向往技术却误入商科，但后来喜欢上了经济学…"
-                }).then(function () {
-                    botui.message.add({
-                        delay: 1200,
-                        content: "因为数据分析也需要Coder嘛"
-                    }).then(function () {
-                        botui.message.add({
-                            delay: 1500,
-                            content: "主攻 R 语言和 Python，略懂 STATA，偶尔也折腾 HTML/CSS/JavaScript/PHP"
-                        }).then(function () {
-                            botui.message.add({
-                                delay: 1500,
-                                content: "研究的方向，是经济/金融方向的数据分析（data science）以及机器学习（machine learning）"
-                            }).then(function () {
-                                botui.message.add({
-                                    delay: 1800,
-                                    content: "喜欢画画，希望有一天能够被称为画师"
-                                }).then(function () {
-                                    botui.action.button({
-                                        delay: 1100,
-                                        action: [{
-                                            text: "为什么叫Mashiro呢？ 🤔",
-                                            value: "why-mashiro"
-                                        }]
-                                    }).then(function (a) {
-                                        thirdpart()
-                                    })
-                                })
-                            })
-                        })
-                    })
-                })
+                    delay: 1000,
+                    content: "软件工程专业"
+            }).then(function () {
+                botui.message.add({
+                    delay: 1000,
+                    content: "本以为"
+            }).then(function () {
+                botui.action.button({
+                    delay: 1100,
+                    action: [{
+                        text: "为什么叫Mashiro呢？ 🤔",
+                        value: "why-mashiro"
+                    }]
+            }).then(function (a) {
+                thirdpart()
+            })
+            })
+            })
             })
         },
         thirdpart = function () {
