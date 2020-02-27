@@ -4,7 +4,7 @@ favicon: /img/custom/favicon.ico
 avatar: /img/avatar/avatar.jpg
 url: https://youjianan.github.io/
 description: 『 再小的帆也能远航 』
-cdn: https://cdn.jsdelivr.net/gh/Youjianan/cdn@1.4
+cdn: https://cdn.jsdelivr.net/gh/Youjianan/cdn@1.41
 
 pjax: 1
 mathjax: 0
@@ -84,7 +84,6 @@ aplayer:
   volume: 0.28
   mutex: true
 
-# Valine
 valine: true
-v_appId: GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz
-v_appKey: mgOpfzbkHYqU92CV4IDlAUHQ
+v_appId: gafFuq63vPwC5pevWa2wmQjC-9Nh9j0Va
+v_appKey: wAEuvkwMr0uCcjQUPbomJIdn
